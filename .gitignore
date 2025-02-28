@@ -1,0 +1,4 @@
+# Ignore target folder (compiled files)
+target/
+.idea/
+*.iml
