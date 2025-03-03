@@ -19,11 +19,11 @@ public abstract class TestUtil {
         WebDriverManager.chromedriver().setup();
 
         ChromeOptions options = new ChromeOptions();
-//        options.addArguments("--headless");
+        options.addArguments("--headless");
 
         driver = new ChromeDriver(options);
-
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+        driver.manage().window().maximize();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(20));
         driver.manage().timeouts().scriptTimeout(Duration.ofSeconds(20));
 
