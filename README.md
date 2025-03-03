@@ -14,21 +14,29 @@ This project is implemented it 3 separate sections each corresponding to 3 tasks
 - [Acknowledgments](#Acknowledgments)
 
 
-#Project sections
-####Section task 1 FooBarUtil Tests
+## Project sections
+#### Section task 1 FooBarUtil Tests
 
 The task is to write tests for a given Java utility class FooBarUtil using JUnit or TestNG.
 
-####Section task 2 Bookstore API Testing
+#### Section task 2 Bookstore API Testing
 The task is to test an endpoint from the Books API available at DemoQA Swagger API.
 
-####Section task Web Tables
+#### Section task Web Tables
 The task is to automate Web Table functionality testing on the DemoQA Web Tables page
 (https://demoqa.com/webtables) using Selenium, Java, and JUnit/TestNG. 
 
 ## Documentation
 
 For a detailed overview of the tasks, please refer to the [Tasks PDF](docs/tasks.pdf) for a more comprehensive understanding of the tasks involved in the project.
+
+For test execution of [Section task 2 Bookstore API Testing](#Section task 2 Bookstore API Testing), a registration at  https://demoqa.com/register is required. Currently a test registration is executed and the credentials are stored in the src/resources/config.properties file.
+If new registration is needed, the following properties should be configured in the config.properties file to be used in the tests:
+
+```bash
+username=your_registered_username
+password=your_registered_password
+```
 
 ## Installation
 
@@ -78,23 +86,23 @@ To run a specific test:
 mvn -Dtest=TestName test
 ```
 
-####Headless Mode
+#### Headless Mode
 Tests are prepared for CI/CD pipelines in headless mode. You can run the tests in headless mode by modifying the options in `src/test/java/com/webtables/TestUtil.java`.
 
-#Tests
+## Tests
 The tests in this repository use TestNG as the testing framework. Tests are located in the `src/test/java/com` directory. Separate directory for each of the 3 tasks.
 
-#Contributing
+## Contributing
 
 As this repository is a task resolution for evaluating my skills, contributions are not currently accepted. However, feel free to explore the code and use it as a reference.
 
 Thank you for understanding!
 
-#License
+## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-#Acknowledgments
+## Acknowledgments
 
 Thanks to Selenium for the browser automation framework.
 Thanks to TestNG for the testing framework.
