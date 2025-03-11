@@ -11,7 +11,7 @@ import java.time.Duration;
 
 public abstract class TestUtil {
 
-    private static final String URL_BASE = "https://demoqa.com/webtables";
+    protected static final String URL_BASE = "https://demoqa.com/webtables";
     protected WebDriver driver;
 
     @BeforeTest

@@ -14,6 +14,7 @@ public class FooBarUtilTest {
       {"15", "foobar"},
       {"0", "0"},
       {"3,5,15,7", "foo,bar,foobar,7"},
+      {"3,3,5,5,15,15,7,7", "foo,foo-copy,bar,bar-copy,foobar,foobar-copy,7,7-copy"}, // Duplicates
       {"03", "foo"}, // Leading zero
       {"05", "bar"},
       {"015", "foobar"},

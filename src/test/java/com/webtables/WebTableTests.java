@@ -3,6 +3,7 @@ package com.webtables;
 import com.webtables.pages.AddNewMemberForm;
 import com.webtables.pages.WebTablePage;
 import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -12,11 +13,10 @@ public class WebTableTests extends TestUtil {
 
     private WebTablePage webTablePage;
 
-    @Override
-    @BeforeTest
-    public void beforeTest() {
-        super.beforeTest();
+    @BeforeMethod
+    public void beforeMethod() {
         webTablePage = new WebTablePage(driver);
+        driver.get(URL_BASE);
     }
 
     @DataProvider(name = "validNewMemberData")
